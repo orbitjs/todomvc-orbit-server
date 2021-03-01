@@ -1,28 +1,21 @@
 # todomvc-orbit-server
 
-A simple server for [TodoMVC](https://github.com/tastejs/todomvc) demo apps.
+A simple [JSON:API](https://jsonapi.org) server for
+[TodoMVC](https://github.com/tastejs/todomvc) demo apps.
+
+This project uses [Koa Orbit](https://github.com/tchak/koa-orbit) and a simple
+in-memory `sqlite` database.
+
+The schema is maintained in `schema.json`.
 
 ## Usage
 
 ``` bash
 yarn install
-yarn start
+yarn dev
 ```
 
-This starts a server running on `http://localhost:3000`.
-
-The server use a simple in-memory `sqlite` database and exposes both
-`JSON:API` and a `GraphQL` endpoints.
-
-The `GraphQL` schema is available at `http://localhost:3000/graphql`.
-
-The schema is maintained in `schema.json`.
-
-View all available endpoints by running:
-
-``` bash
-yarn routes
-```
+This starts a development server running on `http://localhost:3000`.
 
 ## License
 
